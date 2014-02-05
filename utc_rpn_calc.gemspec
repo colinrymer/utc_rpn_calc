@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["colin.rymer@gmail.com"]
   spec.summary       = %q{A simple RPN style calculator that operates on unsigned hex numbers}
   spec.description   = spec.summary
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/colinrymer/utc_rpn_calc"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
