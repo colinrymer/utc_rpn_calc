@@ -1,10 +1,10 @@
 require 'utc_rpn_calc/core_ext/string'
 require 'utc_rpn_calc/core_ext/fixnum'
 
+require 'utc_rpn_calc/error'
+
 module UtcRpnCalc
   class Calculator
-
-    ERROR = "BLARGH!"
     FFFF = "FFFF".hex
 
     def initialize(input)
@@ -18,7 +18,7 @@ module UtcRpnCalc
         process_input(input)
       end
 
-      @stack.pop.to_formatted_hex
+      calculated_value.to_formatted_hex
     end
 
     private
@@ -29,6 +29,10 @@ module UtcRpnCalc
 
     def process_input(input)
       @stack.push(result(input))
+    end
+
+    def calculated_value
+      @stack.pop || 0
     end
 
     def result(input)

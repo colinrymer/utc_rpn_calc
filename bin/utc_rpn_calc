@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), %w[.. lib])
+require 'utc_rpn_calc'
+
+input = ARGV.join(' ')
+
+output = UtcRpnCalc::Calculator.new(input).calculate
+
+print output
+
+exit 1 if output == UtcRpnCalc::ERROR
