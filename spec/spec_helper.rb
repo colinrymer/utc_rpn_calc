@@ -19,3 +19,6 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = 'random'
 end
+
+require 'utc_rpn_calc'
+
