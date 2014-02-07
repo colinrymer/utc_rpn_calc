@@ -1,5 +1,11 @@
 # UtcRpnCalc
 
+[![Gem Version](https://badge.fury.io/rb/utc_rpn_calc.png)](http://badge.fury.io/rb/utc_rpn_calc)
+[![Build Status](https://travis-ci.org/colinrymer/utc_rpn_calc.png?branch=master)](https://travis-ci.org/colinrymer/utc_rpn_calc)
+[![Coverage Status](https://coveralls.io/repos/colinrymer/utc_rpn_calc/badge.png)](https://coveralls.io/r/colinrymer/utc_rpn_calc)
+[![Code Climate](https://codeclimate.com/github/colinrymer/utc_rpn_calc.png)](https://codeclimate.com/github/colinrymer/utc_rpn_calc)
+[![Dependency Status](https://gemnasium.com/colinrymer/utc_rpn_calc.png)](https://gemnasium.com/colinrymer/utc_rpn_calc)
+
 A simple Reverse Polish Notation (RPN) hexadecimal calculator.
 It was written as a demonstration of the UTC IEEE CS coding challenge
 specifications for February 2014.
