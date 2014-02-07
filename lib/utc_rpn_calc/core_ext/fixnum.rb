@@ -4,9 +4,9 @@ class Fixnum
   end
 
   def negate
-      unsigned = ~self % (2**32)
-      hex_string = unsigned.to_s(16)[-4,4]
-      hex_string.hex
+    unsigned = ~self % (2**32)
+    hex_string = unsigned.to_s(16)[-4,4]
+    hex_string.hex
   end
 end
 
